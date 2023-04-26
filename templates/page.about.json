@@ -1,0 +1,270 @@
+{
+  "sections": {
+    "1646106846da1e9b24": {
+      "type": "hero-banner",
+      "settings": {
+        "hero-image-main": "shopify:\/\/shop_images\/ABOUT_US_2.png",
+        "hero-image-mobile": "shopify:\/\/shop_images\/ABOUT_US_-_MOBILE_2.png",
+        "hero_button_link": ""
+      }
+    },
+    "16461193780a49275d": {
+      "type": "rich-text",
+      "blocks": {
+        "1646119378181b51e7-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "ABOUT US",
+            "heading_size": "h0"
+          }
+        },
+        "1646119378181b51e7-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "1646119378181b51e7-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1646119378181b51e7-0",
+        "1646119378181b51e7-1",
+        "1646119378181b51e7-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "164611919557e15fb4": {
+      "type": "image-with-text",
+      "blocks": {
+        "1646119195ca6c7f08-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "1646119195ca6c7f08-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our mission is simple, to supply you with the best products at the best prices. <\/p><p><\/p><p><em>Howell Global Supplies<\/em> are based in the UK and provides key supplies to the distribution sector. Our team has over <em>70 years of experience<\/em> in the distribution market supplying key products that include roll cages, pallet cages, magnums, thermotainers, stillages, and warehouse racking.<\/p>",
+            "text_style": "subtitle"
+          }
+        },
+        "1646119195ca6c7f08-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1646119195ca6c7f08-0",
+        "1646119195ca6c7f08-1",
+        "1646119195ca6c7f08-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Untitled_design_1.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "16461192722d09b6fb": {
+      "type": "image-with-text",
+      "blocks": {
+        "1646119272ea3fe183-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "1646119272ea3fe183-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our success has been built on a reputation for high-quality products and high levels of customer service. <\/p><p>You will find on our website a diverse range of products that are available to purchase online with direct door-to-door delivery through the UK. <a href=\"\/collections\/all\" target=\"_blank\" title=\"All products\">Browse<\/a> our website now to see our current range of products and we look forward to assisting you with your needs.<\/p>",
+            "text_style": "subtitle"
+          }
+        },
+        "1646119272ea3fe183-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1646119272ea3fe183-0",
+        "1646119272ea3fe183-1",
+        "1646119272ea3fe183-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Untitled_design_2_8e767331-8d60-44c7-9e0c-7155454b209d.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 44
+      }
+    },
+    "164611946121ae0c8c": {
+      "type": "sectors",
+      "blocks": {
+        "ce11d82f-f0f8-4efd-b233-84a1ffa44071": {
+          "type": "image",
+          "settings": {
+            "sector_logo": "shopify:\/\/shop_images\/Travel_Industries.png"
+          }
+        },
+        "fbb9c193-adeb-4233-a76e-bb695f96ca58": {
+          "type": "image",
+          "settings": {
+            "sector_logo": "shopify:\/\/shop_images\/Laundry_and_linen_services.png"
+          }
+        },
+        "c43f5162-b00f-4486-bee8-976ae7a91b27": {
+          "type": "image",
+          "settings": {
+            "sector_logo": "shopify:\/\/shop_images\/Food_distributors_and_wholesalers.png"
+          }
+        },
+        "1fe33993-c088-46c0-a5cc-b81e1a1813fc": {
+          "type": "image",
+          "settings": {
+            "sector_logo": "shopify:\/\/shop_images\/Retailers_and_Supermarkets.png"
+          }
+        },
+        "8f45c3be-77d9-42c7-b630-147b084f433c": {
+          "type": "image",
+          "settings": {
+            "sector_logo": "shopify:\/\/shop_images\/Healthcare_Providers.png"
+          }
+        },
+        "229fb7c9-5708-49ab-be5d-22b03babf72b": {
+          "type": "image",
+          "settings": {
+            "sector_logo": "shopify:\/\/shop_images\/Supply_chain_and_logistics_companies.png"
+          }
+        },
+        "a1b12d6f-b77e-48ca-988c-85af8671dbfc": {
+          "type": "image",
+          "settings": {
+            "sector_logo": "shopify:\/\/shop_images\/Automotive_Industry.png"
+          }
+        }
+      },
+      "block_order": [
+        "ce11d82f-f0f8-4efd-b233-84a1ffa44071",
+        "fbb9c193-adeb-4233-a76e-bb695f96ca58",
+        "c43f5162-b00f-4486-bee8-976ae7a91b27",
+        "1fe33993-c088-46c0-a5cc-b81e1a1813fc",
+        "8f45c3be-77d9-42c7-b630-147b084f433c",
+        "229fb7c9-5708-49ab-be5d-22b03babf72b",
+        "a1b12d6f-b77e-48ca-988c-85af8671dbfc"
+      ],
+      "settings": {
+        "sectors_title": "SUPPLIER TO A WIDE RANGE OF INDUSTRIES"
+      }
+    },
+    "1646119529fbddc6bd": {
+      "type": "multicolumn",
+      "blocks": {
+        "16461195293d945bcb-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/N_Roll_Cages.png",
+            "title": "NEW EQUIPMENT",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/new-equipment"
+          }
+        },
+        "16461195293d945bcb-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/R_Roll_Cages.png",
+            "title": "USED EQUIPMENT",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/used-equipment"
+          }
+        },
+        "16461195293d945bcb-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/accessories_256bd5ec-403d-4983-9c03-7a01e7e824d5.png",
+            "title": "ACCESSORIES",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/accessories"
+          }
+        }
+      },
+      "block_order": [
+        "16461195293d945bcb-0",
+        "16461195293d945bcb-1",
+        "16461195293d945bcb-2"
+      ],
+      "settings": {
+        "title": "OUR BEST PRODUCT WITH BEST PRICES",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "SHOP NOW",
+        "button_link": "shopify:\/\/collections",
+        "swipe_on_mobile": true,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "1646106846da1e9b24",
+    "16461193780a49275d",
+    "main",
+    "164611919557e15fb4",
+    "16461192722d09b6fb",
+    "164611946121ae0c8c",
+    "1646119529fbddc6bd"
+  ]
+}

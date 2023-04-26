@@ -1,0 +1,103 @@
+<style>
+  @media screen and (max-width: 549px) {
+    #sectors-container{
+      padding: 30px 15px;
+    }
+    .sectors-section{
+      display: grid;
+      grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );
+      text-align: center;
+      grid-gap:1em;
+    }
+     .sectors-img{
+    	max-width:100px;
+    }
+    .title{
+    	text-align:center;
+    }
+  } 
+  @media screen and (min-width: 550px) {
+    #sectors-container{
+      padding: 30px 15px;
+    }
+    .sectors-section{
+      display: grid;
+      grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );
+      text-align: center;
+      grid-gap:1em;
+    }
+    .title{
+    	text-align:center;
+    }
+    .sectors-img{
+    	max-width:100px;
+    }
+  } 
+  @media screen and (min-width: 990px) {
+  	#sectors-container{
+      padding: 30px 50px;
+      max-width:1500px;
+      margin:0 auto;
+    }
+    .sectors-section{
+      display: grid;
+      grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
+      grid-gap:1em;
+    }
+    .title{
+    	text-align:center;
+    }
+    .sectors-img{
+    	max-width:150px;
+    }
+  }
+  .sectors-img{
+  	width:100%;
+  }
+   
+</style>
+<div id="sectors-container">
+  <h2 class="title">{{ section.settings.sectors_title }}</h2>
+  <div class="sectors-section">
+	{% for block in section.blocks %}
+    	{%- if block.settings.sector_logo != blank -%}
+          <div><img class="sectors-img" src="{{ block.settings.sector_logo | img_url: '150x' }}" alt="" /></div>
+     	{%- endif -%}
+  	{% endfor %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Sectors - Custom",
+    "settings": [
+
+                    {
+                      "type": "text",
+                      "id": "sectors_title",
+                      "default": "Supplier to a Wide Range of Industries",
+                      "label": "Heading"
+                    }
+	],
+      "blocks": [
+        {
+              "type": "image",
+              "name": "Sector Logo",
+              "settings": [
+                {
+                  "type": "image_picker",
+                  "id": "sector_logo",
+                  "label": "Image",
+                  "info": "Upload Sector Logo"
+                }
+                ]
+            }
+      ],
+	"presets": [
+				{
+					"category": "Custom Section",
+					"name": "Sectors - Custom"
+				}
+			   ]
+  }
+{% endschema %}

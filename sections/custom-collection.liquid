@@ -1,0 +1,431 @@
+<style>
+  a{
+  	text-decoration:none;
+  }
+  
+  .collection-card__a:hover .collection-card__title-txt{
+    background-color: #00553C;
+    color:#fff;
+  }
+
+  .collection-card__a:hover .right-icon{
+    margin-left:15px;
+  }
+
+  .collection-card__a:hover .collection-card__img{
+    transform:scale(1.08);
+  }
+  
+   .collection-card__a:hover{
+    border:1px solid #00553c;
+  }
+  
+  .collection-card__main-a:hover .collection-card__title-main{
+  	background-color: rgba(0, 85, 60,0.9);
+  } 
+  
+  .collection-card__main-a:hover .right-icon__main{
+    margin-left:20px;
+  } 
+
+  @media screen and (max-width: 549px) {
+    #custom-collections-container{
+      padding: 30px 15px;
+    }
+
+    .custom-collections{
+      display: grid;
+      grid-gap: 1em;
+    }
+    
+    .collection-card__img-main > img{
+      max-width:300px
+    }
+    .collection-card__img{
+      
+    max-width:300px
+    }
+    .main-img-lp{
+    	display:block;
+    }
+    .main-img-pt{
+    	display:none;
+    }
+  } 
+
+  
+  @media screen and (min-width: 550px) {
+    #custom-collections-container{
+      padding: 30px 15px;
+    }
+    .custom-collections{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1em;
+    }
+    .collection-card__main-a{
+      grid-column: 1/3;
+      display:inherit;
+    }
+    .main-img-lp{
+    	display:block;
+    }
+    .main-img-pt{
+    	display:none;
+    }
+  } 
+  
+  @media screen and (min-width: 990px) {
+    #custom-collections-container{
+      max-width: 1500px;
+      margin: 0 auto;
+      padding:30px 50px;
+    }
+
+    .custom-collections{
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .collection-card__main-a{
+      grid-column:1/2;
+      grid-row: 1/3;
+      display:inherit;
+    }
+    .collection-card__a {
+       display:inherit;
+    }
+    .collection-card__img-container{
+    	flex:1;
+    }
+    .main-img-lp{
+    	display:none;
+    }
+    .main-img-pt{
+    	display:block;
+    }
+  } 
+  
+  .custom-collections > div {
+    background-color: lightyellow;
+    font-size: 18px;
+  }
+  .collection-card__main{
+    display: flex;
+    flex-direction: column;
+    border:5px solid #00553C;
+    border-bottom:0px;
+  }
+  .collection-card-sub{
+    display: flex;
+    flex-direction: column;
+    border:1px solid #8C8C8C;
+  }
+  .collection-card__title{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    color:#2d2d2d;
+    min-height:50px;
+    flex: 1 1 auto;
+  }
+  .collection-card__title-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#2d2d2d;
+    width: 100%;
+    min-height: 50px;
+    background-color: #00553c;
+    color:#fff;
+  }
+  .collection-card__title-main > p{
+  	font-weight:700;
+    text-transform:uppercase;
+    font-size:0.9em;
+  }
+  .collection-card__img-container{
+    width:100%;
+    max-height: 270px;
+    text-align:center;
+    overflow:hidden;
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex: 1 1 auto;
+  }
+  .collection-card__img-main-container{
+    width:100%;
+    height: 100%;
+  }
+  .collection-card__img-main{
+  	flex:1;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .collection-card__img{
+    max-width: 100%;
+    max-height: 270px;
+    transition: all 0.5s;
+  }
+  .collection-card__title-txt{
+    background-color: #eee;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+  }
+  .collection-card__title-txt > p{
+  	margin:0px;
+    font-weight:700;
+    text-transform:uppercase;
+    font-size:0.9em;
+  }
+  .collection-card__title-img{
+    background-color: #00553C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative:
+  }
+  img.right-icon{
+    max-height: 20px;
+    transition:all 0.3s
+  }
+  img.right-icon__main{
+  	margin-left:10px;
+  }
+   
+</style>
+<div id="custom-collections-container">
+  <h2 class="title">{{section.settings.collection_title}}</h2>
+  <div class="custom-collections">
+    <a class="collection-card__main-a" href="{{ section.settings.collection1.url }}">
+      <div class="collection-card__main">
+        <div class="collection-card__img-main">
+          <img class="main-img-pt" src="{{ section.settings.collection1-image-pt | img_url:'320x' }}" alt="">
+          <img class="main-img-lp" src="{{ section.settings.collection1-image-lp | img_url:'320x' }}" alt="">
+        </div>
+        <div class="collection-card__title-main">
+          <p>{{ section.settings.collection1.title }}</p>
+          <img class="right-icon right-icon__main" src="https://cdn.shopify.com/s/files/1/0555/9471/3162/files/right-icon.png?v=1645531817" alt="">
+        </div>
+      </div>
+    </a>
+
+    <a class="collection-card__a" href="{{ section.settings.collection2.url }}">
+      <div class="collection-card-sub">
+        <div class="collection-card__img-container">
+          <img class="collection-card__img" src="{{ section.settings.collection2-image | img_url:'320x' }}" alt="">
+        </div>
+        <div class="collection-card__title">
+          <div class="collection-card__title-txt">
+            <p>{{ section.settings.collection2.title }}</p>
+          </div>
+          <div class="collection-card__title-img">
+            <img class="right-icon" src="https://cdn.shopify.com/s/files/1/0555/9471/3162/files/right-icon.png?v=1645531817" alt="">
+          </div>
+        </div>
+      </div>
+    </a>
+    <a class="collection-card__a"  href="{{ section.settings.collection3.url }}">
+      <div class="collection-card-sub">
+        <div class="collection-card__img-container">
+          <img class="collection-card__img" src="{{ section.settings.collection3-image | img_url:'320x' }}" alt="">
+        </div>
+        <div class="collection-card__title">
+          <div class="collection-card__title-txt">
+            <p>NEW PALLET CAGES</p>
+          </div>
+          <div class="collection-card__title-img">
+            <img class="right-icon" src="https://cdn.shopify.com/s/files/1/0555/9471/3162/files/right-icon.png?v=1645531817" alt="">
+          </div>
+        </div>
+      </div>
+    </a>
+    <a class="collection-card__a"  href="{{ section.settings.collection4.url }}">
+      <div class="collection-card-sub">
+        <div class="collection-card__img-container">
+          <img class="collection-card__img" src="{{ section.settings.collection4-image | img_url:'320x' }}" alt="">
+        </div>
+        <div class="collection-card__title">
+          <div class="collection-card__title-txt">
+            <p>NEW MAGNUM CONTAINERS</p>
+          </div>
+          <div class="collection-card__title-img">
+            <img class="right-icon" src="https://cdn.shopify.com/s/files/1/0555/9471/3162/files/right-icon.png?v=1645531817" alt="">
+          </div>
+        </div>
+      </div>
+    </a>
+    <a class="collection-card__a"  href="{{ section.settings.collection5.url }}">
+      <div class="collection-card-sub">
+        <div class="collection-card__img-container">
+          <img class="collection-card__img" src="{{ section.settings.collection5-image | img_url:'320x' }}" alt="">
+        </div>
+        <div class="collection-card__title">
+          <div class="collection-card__title-txt">
+            <p>{{ section.settings.collection5.title }}</p>
+          </div>
+          <div class="collection-card__title-img">
+            <img class="right-icon" src="https://cdn.shopify.com/s/files/1/0555/9471/3162/files/right-icon.png?v=1645531817" alt="">
+          </div>
+        </div>
+      </div>
+    </a>
+    <a class="collection-card__a"  href="{{ section.settings.collection6.url }}">
+      <div class="collection-card-sub">
+        <div class="collection-card__img-container">
+          <img class="collection-card__img" src="{{ section.settings.collection6-image | img_url:'320x' }}" alt="">
+        </div>
+        <div class="collection-card__title">
+          <div class="collection-card__title-txt">
+            <p>{{ section.settings.collection6.title }}</p>
+          </div>
+          <div class="collection-card__title-img">
+            <img class="right-icon" src="https://cdn.shopify.com/s/files/1/0555/9471/3162/files/right-icon.png?v=1645531817" alt="">
+          </div>
+        </div>
+      </div>
+    </a>
+    <a class="collection-card__a"  href="{{ section.settings.collection7.url }}">
+      <div class="collection-card-sub">
+        <div class="collection-card__img-container">
+          <img class="collection-card__img" src="{{ section.settings.collection7-image | img_url:'320x' }}" alt="">
+        </div>
+        <div class="collection-card__title">
+          <div class="collection-card__title-txt">
+            <p>{{ section.settings.collection7.title }}</p>
+          </div>
+          <div class="collection-card__title-img">
+            <img class="right-icon" src="https://cdn.shopify.com/s/files/1/0555/9471/3162/files/right-icon.png?v=1645531817" alt="">
+          </div>
+        </div>
+      </div>
+    </a>
+      </div>
+  </div>
+
+{% schema %}
+  {
+    "name": "Collection List - Custom",
+    "settings": [
+
+                    {
+                      "type": "text",
+                      "id": "collection_title",
+                      "default": "Shop By Category",
+                      "label": "Collection Title"
+                    },
+					{
+                      "type":"header",
+                      "content":"Collections 1"
+					},
+					{
+					  "type":"image_picker",
+                      "label":"Image - Portrait",
+                      "id": "collection1-image-pt"
+					},
+					{
+					  "type":"image_picker",
+                      "label":"Image - Landscape",
+                      "id": "collection1-image-lp"
+					},
+                    {
+                      "type": "collection",
+                      "id": "collection1",
+                      "label": "t:sections.featured-collection.settings.collection.label"
+                    },
+                    {
+                      "type":"header",
+                      "content":"Collections 2"
+                    },
+                    {
+                      "type":"image_picker",
+                      "label":"Image",
+                      "id": "collection2-image"
+                    },
+                    {
+                      "type": "collection",
+                      "id": "collection2",
+                      "label": "t:sections.featured-collection.settings.collection.label"
+                    },
+                    {
+                      "type":"header",
+                      "content":"Collections 3"
+                    },
+                    {
+                      "type":"image_picker",
+                      "label":"Image",
+                      "id": "collection3-image"
+                    },
+                    {
+                      "type": "url",
+                      "id": "collection3",
+                      "label": "t:sections.featured-collection.settings.collection.label"
+                    },
+                    {
+                      "type":"header",
+                      "content":"Collections 4"
+                    },
+                    {
+                      "type":"image_picker",
+                      "label":"Image",
+                      "id": "collection4-image"
+                    },
+                    {
+                      "type": "url",
+                      "id": "collection4",
+                      "label": "t:sections.featured-collection.settings.collection.label"
+                    },
+                    {
+                      "type":"header",
+                      "content":"Collections 5"
+                    },
+                    {
+                      "type":"image_picker",
+                      "label":"Image",
+                      "id": "collection5-image"
+                    },
+                    {
+                      "type": "collection",
+                      "id": "collection5",
+                      "label": "t:sections.featured-collection.settings.collection.label"
+                    },
+                    {
+                      "type":"header",
+                      "content":"Collections 6"
+                    },
+                    {
+                      "type":"image_picker",
+                      "label":"Image",
+                      "id": "collection6-image"
+                    },
+                    {
+                      "type": "collection",
+                      "id": "collection6",
+                      "label": "t:sections.featured-collection.settings.collection.label"
+                    },
+                    {
+                      "type":"header",
+                      "content":"Collections 7"
+                    },
+                    {
+                      "type":"image_picker",
+                      "label":"Image",
+                      "id": "collection7-image"
+                    },
+                    {
+                      "type": "collection",
+                      "id": "collection7",
+                      "label": "t:sections.featured-collection.settings.collection.label"
+                    }
+				],
+	"presets": [
+				{
+					"category": "Custom Section",
+					"name": "Collections - Custom"
+				}
+			   ]
+  }
+{% endschema %}

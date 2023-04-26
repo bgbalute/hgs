@@ -1,0 +1,218 @@
+<style>
+  
+  .ctb-sections__main > img{
+	width:100%;  
+    box-shadow: 0 0 5px rgb(0 0 0 / 80%);
+  }
+  .ctb-sections__badge > p{
+  	margin:0;
+    font-weight:700;
+  }
+  
+  @media screen and (max-width: 549px) {
+    #ctb-container{
+      padding: 30px 15px;
+    }
+    .ctb-sections__badge-container{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      text-align: center;
+      grid-gap: 1em;
+      margin-top: 20px;
+    }
+    .ctb-sections__badge > img{
+    	max-width:60px;
+    }
+  } 
+  @media screen and (min-width: 550px) {
+    #ctb-container{
+      padding: 30px 15px;
+    }
+	 .ctb-sections__badge-container{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+      grid-gap: 1em;
+      margin-top: 20px;
+    }
+  } 
+  @media screen and (min-width: 990px) {
+  	#ctb-container{
+      padding: 30px 50px;
+      max-width:1500px;
+      margin:0 auto;
+    }
+    .ctb-sections{
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1.5em;
+    }
+    .ctb-sections__badge-container{
+    	display:grid;
+      grid-template-columns: repeat(2, 1fr);
+          grid-gap: 1em;
+      margin-top:0px;
+    }
+    .ctb-sections__badge{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      align-items: center;
+      grid-gap: 1em;
+          text-align: left;
+    }
+  }
+
+</style>
+
+<div id="ctb-container">
+  <div class="ctb-sections">
+	<div class="ctb-sections__main">
+      <div class="ctb-sections__main"><img src="{{ section.settings.ctb-main-image | img_url:'600x'}}" /></div>
+    </div>
+    <div class="ctb-sections__badge-container">
+      <div class="ctb-sections__badge">
+      	<img src="{{ section.settings.ctb-image-1 | img_url:'80x'}}" />
+        <p>{{ section.settings.ctb-label-1 }}</p>
+      </div>
+      <div class="ctb-sections__badge">
+      	<img src="{{ section.settings.ctb-image-2 | img_url:'80x'}}" />
+        <p>{{ section.settings.ctb-label-2 }}</p>
+      </div>
+      <div class="ctb-sections__badge">
+      	<img src="{{ section.settings.ctb-image-3 | img_url:'80x'}}" />
+        <p>{{ section.settings.ctb-label-3 }}</p>
+      </div>
+      <div class="ctb-sections__badge">
+      	<img src="{{ section.settings.ctb-image-4 | img_url:'80x'}}" />
+        <p>{{ section.settings.ctb-label-4 }}</p>
+      </div>
+      <div class="ctb-sections__badge">
+      	<img src="{{ section.settings.ctb-image-5 | img_url:'80x'}}" />
+        <p>{{ section.settings.ctb-label-5 }}</p>
+      </div>
+      <div class="ctb-sections__badge">
+      	<img src="{{ section.settings.ctb-image-6 | img_url:'80x'}}" />
+        <p>{{ section.settings.ctb-label-6 }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Collection List - Custom",
+    "settings": [
+					{
+                      "type":"header",
+                      "content":"Main Image"
+					},
+					{
+					  "type":"image_picker",
+                      "label":"Image",
+                      "id": "ctb-main-image"
+					},
+					{
+                      "type":"header",
+                      "content":"Trust Badge 1"
+					},
+					{
+					  "type":"image_picker",
+                      "label":"Image",
+                      "id": "ctb-image-1"
+					},
+					{
+                      "type": "text",
+                      "id": "ctb-label-1",
+                      "default": "Insert Text Here",
+                      "label": "Label 1"
+                    },
+					{
+                      "type":"header",
+                      "content":"Trust Badge 2"
+					},
+					{
+					  "type":"image_picker",
+                      "label":"Image",
+                      "id": "ctb-image-2"
+					},
+					{
+                      "type": "text",
+                      "id": "ctb-label-2",
+                      "default": "Insert Text Here",
+                      "label": "Label 2"
+                    },
+					{
+                      "type":"header",
+                      "content":"Trust Badge 3"
+					},
+					{
+					  "type":"image_picker",
+                      "label":"Image",
+                      "id": "ctb-image-3"
+					},
+					{
+                      "type": "text",
+                      "id": "ctb-label-3",
+                      "default": "Insert Text Here",
+                      "label": "Label 3"
+                    },
+					{
+                      "type":"header",
+                      "content":"Trust Badge 4"
+					},
+					{
+					  "type":"image_picker",
+                      "label":"Image",
+                      "id": "ctb-image-4"
+					},
+					{
+                      "type": "text",
+                      "id": "ctb-label-4",
+                      "default": "Insert Text Here",
+                      "label": "Label 4"
+                    },
+					{
+                      "type":"header",
+                      "content":"Trust Badge 5"
+					},
+					{
+					  "type":"image_picker",
+                      "label":"Image",
+                      "id": "ctb-image-5"
+					},
+					{
+                      "type": "text",
+                      "id": "ctb-label-5",
+                      "default": "Insert Text Here",
+                      "label": "Label 5"
+                    },
+					{
+                      "type":"header",
+                      "content":"Trust Badge 6"
+					},
+					{
+					  "type":"image_picker",
+                      "label":"Image",
+                      "id": "ctb-image-6"
+					},
+					{
+                      "type": "text",
+                      "id": "ctb-label-6",
+                      "default": "Insert Text Here",
+                      "label": "Label 6"
+                    },
+                    {
+                      "type": "text",
+                      "id": "btn-text",
+                      "default": "View All",
+                      "label": "Button Text"
+                    }
+				],
+	"presets": [
+				{
+					"category": "Custom Section",
+					"name": "Trust Badge - Custom"
+				}
+			   ]
+  }
+{% endschema %}

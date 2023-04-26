@@ -1,0 +1,70 @@
+<style>
+  .desktop-banner-img, .mobile-banner-img{
+  	width:100%;
+  }
+
+   
+  @media only screen and (max-width: 549px) { 
+    .desktop-banner-img, .mobile-banner-img{
+      width: 100%;
+      height: auto !important;
+    } 
+    img.desktop-banner-img{
+    	display:none;
+    }
+  }
+  
+  @media only screen and (min-width: 550px) { 
+    img.desktop-banner-img{
+    	display:block;
+    }
+    img.mobile-banner-img{
+    	display:none;
+    }
+  }
+</style>
+
+<div id="custom-hero-banner">
+  	<div class="hero-banner-container">
+      <a href="{{ section.settings.hero_button_link }}">
+        <img class="desktop-banner-img" src="{{section.settings.hero-image-main | img_url:'master' }}" />
+        <img class="mobile-banner-img" src="{{section.settings.hero-image-mobile | img_url:'master' }}" />
+      </a>
+  	</div>
+
+</div>
+
+
+{% schema %}
+  {
+    "name": "Image Banner - Custom",
+    "settings": [
+					{
+                      "type":"header",
+                      "content":"Image Banner"
+					},
+					{
+					  "type":"image_picker",
+                      "label":"Image",
+                      "id": "hero-image-main"
+					},
+					{
+					  "type":"image_picker",
+                      "label":"Image",
+                      "id": "hero-image-mobile"
+					},
+                    {
+                      "type": "url",
+                      "id": "hero_button_link",
+                      "label": "Button Link"
+                    }
+				],
+	"presets": [
+				{
+					"category": "Custom Section",
+					"name": "Image Banner - Custom"
+				}
+			   ]
+  }
+{% endschema %}
+

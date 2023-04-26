@@ -1,0 +1,346 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "d0adce4f-b848-4f00-babc-6d595f3f66b5": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<p style=\"font-size:12px;\">VAT excluded<\/p>"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "1504b26a-08dd-4d86-ba85-4e54458f67de": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Guarantees",
+            "icon": "clipboard",
+            "content": "<p>✔ Reliable Service<\/p><p>✔ Competitive rates<\/p><p>✔ Ready supply of new & refurbished stock<\/p><p>✔ Ready for collection or delivery<\/p><p>✔ Quick order turnaround<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Specification",
+            "icon": "box",
+            "content": "<p>{{ product.metafields.my_fields.specification | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "8e143951-da47-4fe1-808d-a3ff5cca3728": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Note",
+            "icon": "chat_bubble",
+            "content": "<p><em>Please note that the images are for illustrative purposes only. The dimensions of roll cages may vary slightly but we provide an assurance that all cages are refurbished to the highest standards.<\/em><\/p>",
+            "page": ""
+          }
+        },
+        "961605fc-7dce-409e-b3a5-3ee4b57db019": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping",
+            "icon": "truck",
+            "content": "<p>We do not deliver to Northern Ireland and Southern Ireland.<\/p><p>For Scotland deliveries please call the HGS number 07778662490 for a delivery quotation.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "caption",
+        "price",
+        "d0adce4f-b848-4f00-babc-6d595f3f66b5",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "1504b26a-08dd-4d86-ba85-4e54458f67de",
+        "collapsible-row-0",
+        "8e143951-da47-4fe1-808d-a3ff5cca3728",
+        "961605fc-7dce-409e-b3a5-3ee4b57db019"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "large",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "164567395222913970": {
+      "type": "sectors",
+      "blocks": {
+        "a73bc3ce-7646-41f1-96df-8ea63b093b3b": {
+          "type": "image",
+          "settings": {
+            "sector_logo": "shopify:\/\/shop_images\/Retailers_and_Supermarkets.png"
+          }
+        },
+        "ffebde28-a6bc-4079-a79b-38ba34108062": {
+          "type": "image",
+          "settings": {
+            "sector_logo": "shopify:\/\/shop_images\/Food_distributors_and_wholesalers.png"
+          }
+        },
+        "76ec2d60-c756-451c-a22a-f9bb2262a8f1": {
+          "type": "image",
+          "settings": {
+            "sector_logo": "shopify:\/\/shop_images\/Healthcare_Providers.png"
+          }
+        },
+        "341f74b3-230e-4b0c-a6ad-911ea18563d2": {
+          "type": "image",
+          "settings": {
+            "sector_logo": "shopify:\/\/shop_images\/Travel_Industries.png"
+          }
+        },
+        "108b4b64-280b-4a28-b326-aa47c9117c74": {
+          "type": "image",
+          "settings": {
+            "sector_logo": "shopify:\/\/shop_images\/Supply_chain_and_logistics_companies.png"
+          }
+        },
+        "2f45b576-6d05-4210-a1ac-292e94bd43fa": {
+          "type": "image",
+          "settings": {
+            "sector_logo": "shopify:\/\/shop_images\/Laundry_and_linen_services.png"
+          }
+        },
+        "17786114-8c50-4f1d-bb96-c53cf08582f9": {
+          "type": "image",
+          "settings": {
+            "sector_logo": "shopify:\/\/shop_images\/Automotive_Industry.png"
+          }
+        }
+      },
+      "block_order": [
+        "a73bc3ce-7646-41f1-96df-8ea63b093b3b",
+        "ffebde28-a6bc-4079-a79b-38ba34108062",
+        "76ec2d60-c756-451c-a22a-f9bb2262a8f1",
+        "341f74b3-230e-4b0c-a6ad-911ea18563d2",
+        "108b4b64-280b-4a28-b326-aa47c9117c74",
+        "2f45b576-6d05-4210-a1ac-292e94bd43fa",
+        "17786114-8c50-4f1d-bb96-c53cf08582f9"
+      ],
+      "settings": {
+        "sectors_title": "SUPPLIERS TO A WIDE RANGE OF INDUSTRIES"
+      }
+    },
+    "164561974282a3a59d": {
+      "type": "image-with-text",
+      "blocks": {
+        "1645619742ca97c7cb-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Refurbished Roll Cages",
+            "heading_size": "h1"
+          }
+        },
+        "1645619742ca97c7cb-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>All of our roll cages are fully reconditioned to an excellent, clean & safe working condition and do not have name branding stamped on or around the tubing.<\/p><p>We offer very competitive rates and volume discounts and have a large stock holding of roll cages ready for delivery within 24 hours, subject to peak periods.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "1645619742ca97c7cb-0",
+        "1645619742ca97c7cb-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1645619292539b8fec": {
+      "type": "custom-trust-badge",
+      "settings": {
+        "ctb-main-image": "shopify:\/\/shop_images\/2.png",
+        "ctb-image-1": "shopify:\/\/shop_images\/Fast_Turnaround.png",
+        "ctb-label-1": "Quick Order Turnaround",
+        "ctb-image-2": "shopify:\/\/shop_images\/Large_Secure_Premises.png",
+        "ctb-label-2": "Large Secure Premises",
+        "ctb-image-3": "shopify:\/\/shop_images\/On-site_off-site_repairs.png",
+        "ctb-label-3": "On-site, off-site repairs",
+        "ctb-image-4": "shopify:\/\/shop_images\/Ready_supply_of_new_refurbished_stock.png",
+        "ctb-label-4": "Ready supply of new & refurbished stock",
+        "ctb-image-5": "shopify:\/\/shop_images\/Reliable_Service.png",
+        "ctb-label-5": "Reliable Service",
+        "ctb-image-6": "shopify:\/\/shop_images\/Value_for_Money.png",
+        "ctb-label-6": "Value for Money",
+        "btn-text": "View All"
+      }
+    },
+    "16456164110796e969": {
+      "type": "rich-text",
+      "blocks": {
+        "1645616411d5774229-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Far East Production",
+            "heading_size": "h1"
+          }
+        },
+        "1645616411d5774229-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Larger volume orders are manufactured in China. Distribution Maintenance work in partnership with our Chinese manufacturing facilities which use the latest technologies, robotic welding and automated zinc plating plants in order to offer an unrivalled product, whilst also being able to implement UK standards of process control and quality, with all orders being signed off by our UK senior management team who regularly visit the factories in China.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1645616411d5774229-0",
+        "1645616411d5774229-1"
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "1645618819bfc017af": {
+      "type": "clients",
+      "disabled": true,
+      "blocks": {
+        "dc7f59b4-85b9-41a3-951d-929de89e81a5": {
+          "type": "image",
+          "settings": {
+            "client_logo": "shopify:\/\/shop_images\/Brakes.png"
+          }
+        },
+        "11e840a9-988c-44b2-a0cb-d3e65801e49b": {
+          "type": "image",
+          "settings": {
+            "client_logo": "shopify:\/\/shop_images\/clean-linen-workwear.jpg"
+          }
+        },
+        "c243b367-c30f-4dc4-949b-d1868020a1e3": {
+          "type": "image",
+          "settings": {
+            "client_logo": "shopify:\/\/shop_images\/dhl.png"
+          }
+        },
+        "7a9ca852-7d84-46da-ad33-4316f7badf6d": {
+          "type": "image",
+          "settings": {
+            "client_logo": "shopify:\/\/shop_images\/halfords.png"
+          }
+        },
+        "b5bc91a9-9bad-450f-acdc-cbebcfd009fb": {
+          "type": "image",
+          "settings": {
+            "client_logo": "shopify:\/\/shop_images\/hamleys.png"
+          }
+        },
+        "4cb9199f-5908-499c-b893-dec7ee6985b7": {
+          "type": "image",
+          "settings": {
+            "client_logo": "shopify:\/\/shop_images\/Kuehne_Nagel.png"
+          }
+        },
+        "a1951a23-898f-4e04-8789-94cf02c4f12b": {
+          "type": "image",
+          "settings": {
+            "client_logo": "shopify:\/\/shop_images\/superdrug.png"
+          }
+        }
+      },
+      "block_order": [
+        "dc7f59b4-85b9-41a3-951d-929de89e81a5",
+        "11e840a9-988c-44b2-a0cb-d3e65801e49b",
+        "c243b367-c30f-4dc4-949b-d1868020a1e3",
+        "7a9ca852-7d84-46da-ad33-4316f7badf6d",
+        "b5bc91a9-9bad-450f-acdc-cbebcfd009fb",
+        "4cb9199f-5908-499c-b893-dec7ee6985b7",
+        "a1951a23-898f-4e04-8789-94cf02c4f12b"
+      ],
+      "settings": {
+        "ourclients_title": "OUR CUSTOMERS INCLUDE"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "YOU MAY ALSO LIKE",
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "164567395222913970",
+    "164561974282a3a59d",
+    "1645619292539b8fec",
+    "16456164110796e969",
+    "1645618819bfc017af",
+    "product-recommendations"
+  ]
+}

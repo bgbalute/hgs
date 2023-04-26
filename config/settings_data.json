@@ -1,0 +1,203 @@
+{
+  "current": {
+    "colors_accent_1": "#07890a",
+    "gradient_accent_1": "linear-gradient(342deg, rgba(0, 85, 60, 1) 16%, rgba(156, 189, 156, 1) 52%, rgba(7, 137, 10, 1) 87%)",
+    "colors_accent_2": "#00553c",
+    "gradient_accent_2": "linear-gradient(89deg, rgba(7, 137, 10, 1) 7%, rgba(0, 85, 60, 1) 94%)",
+    "colors_background_1": "#FFFFFF",
+    "colors_background_2": "#F3F3F3",
+    "type_header_font": "montserrat_n6",
+    "type_body_font": "montserrat_n4",
+    "body_scale": 100,
+    "page_width": 1500,
+    "card_style": "card",
+    "badge_position": "top left",
+    "badge_corner_radius": 0,
+    "sale_badge_color_scheme": "accent-2",
+    "sold_out_badge_color_scheme": "inverse",
+    "predictive_search_show_vendor": true,
+    "predictive_search_show_price": true,
+    "favicon": "shopify:\/\/shop_images\/Untitled_design_4.png",
+    "currency_code_enabled": true,
+    "checkout_logo_image": "shopify:\/\/shop_images\/Asset_1_4x-8.png",
+    "checkout_logo_position": "center",
+    "checkout_accent_color": "#00553c",
+    "checkout_button_color": "#07890a",
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "announcement-bar-0": {
+            "type": "announcement",
+            "settings": {
+              "text": "Welcome to our store",
+              "color_scheme": "accent-2",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "announcement-bar-0"
+        ],
+        "settings": {
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "color_scheme": "background-1",
+          "logo": "shopify:\/\/shop_images\/Asset_1_4x-8.png",
+          "logo_width": 100,
+          "logo_position": "middle-left",
+          "menu": "main-menu",
+          "show_line_separator": true,
+          "enable_sticky_header": true,
+          "margin_bottom": 0
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-2": {
+            "type": "text",
+            "settings": {
+              "heading": "HOWELL GLOBAL SUPPLIES",
+              "subtext": "<p>Our team has over 70 years of experience in the distribution market supplying key products that include roll cages, pallet cages, magnums, thermotainers, stillages, and warehouse racking. <\/p>"
+            }
+          },
+          "9d5eeb19-57df-4236-8f06-c2db75163f32": {
+            "type": "text",
+            "settings": {
+              "heading": "CONTACT US",
+              "subtext": "<p> <a href=\"mailto:info@howellglobalsupplies.com\" target=\"_blank\" title=\"mailto:info@howellglobalsupplies.com\">info@howellglobalsupplies.com<\/a><\/p><p>🕐 7:30 AM to 4:30 PM | BST<\/p><p>📅 Monday - Friday<\/p>"
+            }
+          },
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "SHOP NOW",
+              "menu": "shop-now"
+            }
+          },
+          "footer-1": {
+            "type": "link_list",
+            "settings": {
+              "heading": "MENU",
+              "menu": "policies"
+            }
+          }
+        },
+        "block_order": [
+          "footer-2",
+          "9d5eeb19-57df-4236-8f06-c2db75163f32",
+          "footer-0",
+          "footer-1"
+        ],
+        "settings": {
+          "color_scheme": "background-1",
+          "newsletter_enable": false,
+          "newsletter_heading": "Subscribe to our emails",
+          "show_social": true,
+          "enable_country_selector": false,
+          "enable_language_selector": false,
+          "payment_enable": false,
+          "margin_top": 48,
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "main-password-header": {
+        "type": "main-password-header",
+        "settings": {
+        }
+      },
+      "main-password-footer": {
+        "type": "main-password-footer",
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ],
+    "blocks": {
+      "3720565183479497137": {
+        "type": "shopify:\/\/apps\/globo-product-options-variant\/blocks\/app-embed-block\/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
+  },
+  "presets": {
+    "Default": {
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "announcement-bar-0": {
+              "type": "announcement",
+              "settings": {
+                "color_scheme": "background-1"
+              }
+            }
+          },
+          "block_order": [
+            "announcement-bar-0"
+          ],
+          "settings": {
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo_width": 90
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "link_list",
+              "settings": {
+              }
+            },
+            "footer-1": {
+              "type": "link_list",
+              "settings": {
+                "heading": "Info"
+              }
+            },
+            "footer-2": {
+              "type": "text",
+              "settings": {
+                "heading": "Our mission"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_social": true,
+            "enable_country_selector": false,
+            "enable_language_selector": false,
+            "margin_top": 48
+          }
+        },
+        "main-password-header": {
+          "type": "main-password-header",
+          "settings": {
+          }
+        },
+        "main-password-footer": {
+          "type": "main-password-footer",
+          "settings": {
+          }
+        }
+      }
+    }
+  }
+}

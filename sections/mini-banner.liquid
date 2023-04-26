@@ -1,0 +1,114 @@
+<style>
+  @media screen and (max-width: 549px) {
+
+  } 
+  @media screen and (min-width: 550px) {
+
+  } 
+  @media screen and (min-width: 750px) {
+  	#mini-banner-container{
+      padding:10px 90px;
+    }
+   
+    .mini-container__item{
+    	
+    }
+   
+  }
+  @media screen and (min-width: 990px) {
+  	#mini-banner-container{
+      max-width:72.6rem;
+      margin:0 auto;
+      padding:0px;
+    }
+     .mini-banner-section{
+    	display:grid;
+      grid-template-columns:1fr 1fr 1fr;
+    }
+   
+  }
+
+
+</style>
+
+<div id="mini-banner-container">
+  <div class="mini-banner-section">
+    <div class="mini-container__item">
+      <div clas="mini-container__icon"><img class="mini-banner-img" src="{{ section.settings.email_img | img_url:'30x' }}" /></div>
+      <div clas="mini-container__text"><span>{{section.settings.email_txt}}</span></div>
+    </div>
+    <div class="mini-container__item">
+      <div clas="mini-container__icon"><img class="mini-banner-img" src="{{ section.settings.time_img | img_url:'30x' }}" /></div>
+      <div clas="mini-container__text"><span>{{section.settings.time_text}}</span></div>
+    </div>
+    <div class="mini-container__item">
+      <div clas="mini-container__icon"><img class="mini-banner-img" src="{{ section.settings.days_img | img_url:'30x' }}" /></div>
+      <div clas="mini-container__text"><span>{{section.settings.days_txt}}</span></div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Mini Banner - Custom",
+    "settings": [
+					{
+                      "type":"header",
+                      "content":"Mini Banner"
+					},
+					{
+                      "type":"header",
+                      "content":"Email"
+					},
+					{
+					  "type":"image_picker",
+                      "label":"Email icon",
+                      "id": "email_img"
+					},
+     				{
+                      "type": "text",
+                      "id": "email_txt",
+                      "default": "(Insert Store's Email Here)",
+                      "label": "Store's Email"
+                    },
+					{
+                      "type":"header",
+                      "content":"Time"
+					},
+					{
+					  "type":"image_picker",
+                      "label":"Time icon",
+                      "id": "time_img"
+					},
+     				{
+                      "type": "text",
+                      "id": "time_text",
+                      "default": "(Insert hours available)",
+                      "label": "Store's Open Hours"
+                    },
+					{
+                      "type":"header",
+                      "content":"Days"
+					},
+					{
+					  "type":"image_picker",
+                      "label":"Days icon",
+                      "id": "days_img"
+					},
+     				{
+                      "type": "text",
+                      "id": "days_txt",
+                      "default": "(Insert days available)",
+                      "label": "Store's Day Available"
+                    }
+				],
+	"presets": [
+				{
+					"category": "Custom Section",
+					"name": "Mini Banner - Custom"
+				}
+			   ]
+  }
+{% endschema %}
+
