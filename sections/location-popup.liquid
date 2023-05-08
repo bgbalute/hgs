@@ -1,0 +1,153 @@
+<style>
+  #popup-overlay {
+    position: fixed;
+    height: 100%;
+    width: 100% !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+  }
+
+  #popup-overlay span {
+    display: none;
+  }
+  @media screen and (min-width: 549px) {
+    .location-popup-field-container {
+      min-width: 500px;
+    }
+  }
+  .location-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.5);
+    object-fit: fill;
+  }
+  .location-popup-field-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+  }
+  .stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
+  .location-zipcode-input {
+    font-size: 2rem;
+    padding: 5px;
+    margin: 15px 0;
+  }
+  .location-zipcode-label {
+    font-size: 2rem;
+  }
+  .location-zipcode-error {
+    max-width: 400px;
+    display: none;
+  }
+  span.location-zipcode-errormessage p {
+    background-color: #f9c2c2;
+    padding: 10px;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+</style>
+{% comment %} <div id="popup-overlay"><span>.</span></div> {% endcomment %}
+
+{%- assign zipcode_list = settings.zipcode_list | newline_to_br | split: '<br />' -%}
+
+
+<div class="location-popup">
+  <div class="location-popup-field-container">
+
+    <label for="location-zipcode" class="location-zipcode-label">{{ section.settings.label }}</label>
+    <input
+      id="zipcode_text"
+      type="text"
+      class="location-zipcode-input">
+    <button
+      id="check_zipcode"
+      type="submit"
+      class="button">Check</button>
+
+    <div class="location-zipcode-error">
+      <span class="location-zipcode-errormessage">
+        {{ section.settings.error_message }}
+      </span>
+    </div>
+  </div>
+</div>
+
+
+<script type="module" src="{{ 'jquery-cookie.js' | asset_url }}"></script>
+<script>
+  window.onload = function() {
+    const locationPopup = document.querySelector(".location-popup");
+
+    function disableScroll() {
+      document.body.classList.add("stop-scrolling");
+    }
+
+    function enableScroll() {
+      document.body.classList.remove("stop-scrolling");
+    }
+
+    var is_modal_show = sessionStorage.getItem('alreadyShow');
+
+
+    if (is_modal_show != 'alredy shown') {
+      $(".location-popup").show();
+      disableScroll();
+    } else {
+      $(".location-popup").hide();
+      enableScroll();
+    }
+    let submitZipcode = document.getElementById("check_zipcode");
+    submitZipcode.addEventListener("click", checkZipcode);
+    let zipcodes = [];{% for zipcode in zipcode_list %}zipcodes.push('{{ zipcode | strip }}');{% endfor %}function checkZipcode() {
+      let zipcodeText = document.getElementById("zipcode_text").value;
+      if (zipcodes.includes(zipcodeText)) {
+        sessionStorage.setItem('alreadyShow', 'alredy shown');
+        $(".location-popup").hide();
+        enableScroll();
+      } else {
+        $(".location-zipcode-error").show();
+      }
+    }
+
+  }
+</script>
+
+{% schema %}
+  {
+    "name": "Location Popup",
+    "settings": [
+      {
+        "type": "text",
+        "id": "label",
+        "label": "Label",
+        "default": "Please enter your zipcode"
+      }, {
+        "type": "richtext",
+        "id": "error_message",
+        "label": "Error Message",
+        "default": "<p>Unavailable Area</p>"
+      }
+    ]
+  }
+{% endschema %}

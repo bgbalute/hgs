@@ -8,6 +8,18 @@
     "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
+    "name": "Restricted Locations",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "zipcode_list",
+        "label": "Restricted Zipcode",
+        "placeholder": "AB99\nEH99\nPH49",
+        "info": "Each zipcode must be entered in different line"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.colors.name",
     "settings": [
       {
