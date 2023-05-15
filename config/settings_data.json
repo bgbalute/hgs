@@ -1,5 +1,6 @@
 {
   "current": {
+    "zipcode_list": "1234\n567A",
     "colors_accent_1": "#07890a",
     "gradient_accent_1": "linear-gradient(342deg, rgba(0, 85, 60, 1) 16%, rgba(156, 189, 156, 1) 52%, rgba(7, 137, 10, 1) 87%)",
     "colors_accent_2": "#00553c",
@@ -114,6 +115,13 @@
       "main-password-footer": {
         "type": "main-password-footer",
         "settings": {
+        }
+      },
+      "location-popup": {
+        "type": "location-popup",
+        "settings": {
+          "label": "Please enter your zipcode",
+          "error_message": "<p>Unavailable Area<\/p>"
         }
       }
     },
