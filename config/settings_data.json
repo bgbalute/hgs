@@ -121,7 +121,7 @@
         "type": "location-popup",
         "settings": {
           "label": "Please enter your zipcode",
-          "error_message": "<p>Unavailable Area<\/p>"
+          "error_message": "<p>We do not deliver to Northern Ireland and Southern Ireland.<\/p><p>For Scotland deliveries please call the HGS number 07778662490 for a delivery quotation.<\/p>"
         }
       }
     },
