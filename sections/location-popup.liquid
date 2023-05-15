@@ -125,14 +125,20 @@
     {% endfor %}
     function checkZipcode() {
       let zipcodeText = document.getElementById("zipcode_text").value;
-      if (zipcodes.includes(zipcodeText)) {
+      if (zipcodeText.length != 0){
+        if (zipcodes.includes(zipcodeText)) {
         $(".location-zipcode-error").show();
         
-      } else {
-        sessionStorage.setItem('alreadyShow', 'already shown');
-        $(".location-popup").hide();
-        enableScroll();
+        } else {
+          sessionStorage.setItem('alreadyShow', 'already shown');
+          $(".location-popup").hide();
+          enableScroll();
+        }
       }
+      else{
+        alert("Please enter your zip code");
+      }
+      
     }
 
   }
