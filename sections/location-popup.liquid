@@ -110,7 +110,7 @@
     var is_modal_show = sessionStorage.getItem('alreadyShow');
 
 
-    if (is_modal_show != 'alredy shown') {
+    if (is_modal_show != 'already shown') {
       $(".location-popup").show();
       disableScroll();
     } else {
@@ -119,14 +119,19 @@
     }
     let submitZipcode = document.getElementById("check_zipcode");
     submitZipcode.addEventListener("click", checkZipcode);
-    let zipcodes = [];{% for zipcode in zipcode_list %}zipcodes.push('{{ zipcode | strip }}');{% endfor %}function checkZipcode() {
+    let zipcodes = [];
+    {% for zipcode in zipcode_list %}
+      zipcodes.push('{{ zipcode | strip }}');
+    {% endfor %}
+    function checkZipcode() {
       let zipcodeText = document.getElementById("zipcode_text").value;
       if (zipcodes.includes(zipcodeText)) {
-        sessionStorage.setItem('alreadyShow', 'alredy shown');
+        $(".location-zipcode-error").show();
+        
+      } else {
+        sessionStorage.setItem('alreadyShow', 'already shown');
         $(".location-popup").hide();
         enableScroll();
-      } else {
-        $(".location-zipcode-error").show();
       }
     }
 
