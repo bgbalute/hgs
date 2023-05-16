@@ -121,12 +121,12 @@
     submitZipcode.addEventListener("click", checkZipcode);
     let zipcodes = [];
     {% for zipcode in zipcode_list %}
-      zipcodes.push('{{ zipcode | strip }}');
+      zipcodes.push('{{ zipcode | strip | downcase }}');
     {% endfor %}
     function checkZipcode() {
       let zipcodeText = document.getElementById("zipcode_text").value;
       if (zipcodeText.length != 0){
-        if (zipcodes.includes(zipcodeText)) {
+        if (zipcodes.includes(zipcodeText.toLowerCase())) {
         $(".location-zipcode-error").show();
         
         } else {
