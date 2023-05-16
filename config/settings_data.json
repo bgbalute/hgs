@@ -1,6 +1,6 @@
 {
   "current": {
-    "zipcode_list": "1234\n567A",
+    "zipcode_list": "Belfast\nBelfast Greater\nCounty Antrim\nCounty Armagh\nCounty Down\nCounty Fermanagh\nCounty Londonderry\nCounty Tyrone\nAberdeen City\nAberdeenshire\nAngus\nArgyll And Bute\nCity Of Edinburgh\nClackmannanshire\nDumfries And Galloway\nDunbartonshire\nDundee City\nEast Ayrshire\nEast Dunbartonshire\nEast Lothian\nEast Renfrewshire\nFalkirk\nFife\nGlasgow City\nHighland\nInverclyde\nIsle Of Barra\nMidlothian\nMoray\nNorth Ayrshire\nNorth Lanarkshire\nNorthumberland\nOrkneyOrkney Islands\nPerth And Kinross\nRenfrewshire\nScottish Borders\nShetland Islands\nSouth Ayrshire\nSouth Lanarkshire\nStirlingWest Dunbart\nWest Lothian\nWestern Isles",
     "colors_accent_1": "#07890a",
     "gradient_accent_1": "linear-gradient(342deg, rgba(0, 85, 60, 1) 16%, rgba(156, 189, 156, 1) 52%, rgba(7, 137, 10, 1) 87%)",
     "colors_accent_2": "#00553c",
